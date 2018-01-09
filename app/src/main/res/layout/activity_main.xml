@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="test.bwie.com.xiangmu.MainActivity">
+    <android.support.v4.view.ViewPager
+    android:id="@+id/viewpager"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8">
+</android.support.v4.view.ViewPager>
+    <!-- 指示标签 -->
+    <LinearLayout
+        android:id="@+id/cursorarea"
+        android:layout_width="fill_parent"
+        android:background="#CDCDCD"
+        android:orientation="horizontal"
+        android:layout_height="2dp">
+        <ImageView
+            android:id="@+id/cursor_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </ImageView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomlinear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#DCDCDC">  -->
+        <RadioGroup
+            android:id="@+id/rg_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+
+            <RadioButton
+                android:id="@+id/btn_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="-5dp"
+                android:textSize="14sp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="首页"
+                android:checked="true"
+                android:drawableTop="@drawable/firstbtn"
+                />
+
+            <RadioButton
+                android:id="@+id/btn_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="分类"
+                android:checked="true"
+                android:drawableTop="@drawable/sceondbtn"
+                />
+
+            <RadioButton
+                android:id="@+id/btn_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/threebtn"
+                android:checked="true"
+                android:text="购物车"
+                />
+
+            <RadioButton
+                android:id="@+id/btn_four"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="true"
+                android:drawableTop="@drawable/fourbtn"
+                android:text="我的"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

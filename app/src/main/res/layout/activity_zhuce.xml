@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zhuce"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="test.bwie.com.xiangmu.ZhuceActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EA6431">
+
+        <ImageView
+            android:id="@+id/back_login"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+
+            android:background="@drawable/ic_browser_nav_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新用户登录"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/zhu_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="请输入用户名" />
+
+    <EditText
+        android:id="@+id/zhu_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="请输入密码" />
+
+    <EditText
+        android:id="@+id/zhu_repass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="确认密码" />
+
+    <EditText
+        android:id="@+id/zhu_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="请输入邮箱" />
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/zhuce_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EA6431"
+        android:text="注册" />
+
+</LinearLayout>
